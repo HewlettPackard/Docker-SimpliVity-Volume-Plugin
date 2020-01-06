@@ -49,7 +49,7 @@ The **HPE SimpliVity Docker Volume Plug-in** supports several optional parameter
 
 - **help** -- displays usage help and backend initialization status.
 
-The following is an example Docker command creating a full provisioned, 50 GB volume:
+The following is an example Docker command creating 50 GB volume:
 ```
 $ docker volume create -d simplivity --name <vol_name> -o size=50
 ```
