@@ -12,17 +12,12 @@ Currently, this Volume Plugin for Docker supports popular container platform ie.
 ## Supported Features
 
 * volume features
-  * thin
-  * dedup
-  * full
-  * compression
   * restore
   * clones
-  * QoS
   * consistency group(grouping of volumes)
   * mount_conflict_delay
   * concurrent volume access
-  * backup schedule
+  * multiple backups via backup policy
   * file system permissions and ownership
 
 ## Troubleshooting
@@ -31,7 +26,7 @@ Troubleshooting issues with the plugin can be performed using these [tips](/docs
 
 
 ## Limitations
-- List of issues around the containerized version of the plugin/Managed plugin is present in https://github.com/hpe-storage/python-hpedockerplugin/issues
+- List of issues around the containerized version of the plugin is present in https://github.com/HewlettPackard/Docker-SimpliVity-Volume-Plugin/issues
 
 - Shared volume support is present for containers running on the same host.
 
