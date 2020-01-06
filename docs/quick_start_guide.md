@@ -22,15 +22,24 @@ $ yum install -y iscsi-initiator-utils device-mapper-multipath
 $ yum install -y open-vm-tools
 ```
 3. Add "disk.EnableUUID = "TRUE"" parameter for all worker nodes VM’s
-  a.	Locate the Windows Server 2016 virtual machine for which you are enabling the disk UUID attribute, and power off the virtual machine.
-  b.	After power-off, right-click the virtual machine, and choose Edit Settings.
-  c.	Click VM Options tab, and select Advanced.
-  d.	Click Edit Configuration in Configuration Parameters.
-  e.	Click Add parameter.
-  f.	In the Key column, type disk.EnableUUID.
-  g.	In the Value column, type TRUE.
-  h.	Click OK and click Save.
-  i.	Power on the virtual machine
+
+    a.	Locate the virtual machine for which you are enabling the disk UUID attribute, and power off the virtual machine.
+
+    b.	After power-off, right-click the virtual machine, and choose Edit Settings.
+
+    c.	Click VM Options tab, and select Advanced.
+
+    d.	Click Edit Configuration in Configuration Parameters.
+
+    e.	Click Add parameter.
+
+    f.	In the Key column, type disk.EnableUUID.
+
+    g.	In the Value column, type TRUE.
+
+    h.	Click OK and click Save.
+
+    i.	Power on the virtual machine
 
 4. Restart the Docker daemon
 
@@ -47,7 +56,7 @@ $ systemctl restart docker.service
 $ apt-get install -y open-iscsi multipath-tools xfsprogs
 ```
 
-2. 2. Install VMware tools on all worker nodes.
+2. Install VMware tools on all worker nodes.
 ```
 $ sudo apt-get install open-vm-tools-lts-trusty
 ```
@@ -70,10 +79,15 @@ $ mkdir -p /simplivity/var/private/temp/
 $ vi /simplivity/var/private/config/current/appint-container-provider.default
 ```   
 3. Configure Datacentre, Datastore, Esxi Hostname, Omnistack IP and Vcenter server IP. Below is a sample config file.
+
    docker.volume.datacenter=Barcelona
+   
    docker.volume.datastore=SVT_Barcelona01
+   
    docker.volume.hostname=omnicube304240.cloud.local
+   
    docker.volume.omnistack.hostname=10.30.4.245
+   
    docker.volume.vcenter.server=10.20.0.58
 
 4. Run the following Docker commands to create the HPE SimpliVity Container Provider container.
