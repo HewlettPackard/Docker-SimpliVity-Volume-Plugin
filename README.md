@@ -2,7 +2,7 @@
 
 HPE Docker Volume Plugin is an open source project that provides persistent storage and features for your containerized applications using HPE SimpliVity.
 
-Currently, this Volume Plugin for Docker supports popular container platform ie. Docker. We will be supporting Kubernetes, OpenShift in next releases.
+Currently, this Volume Plugin for Docker supports popular container platform ie. Docker. We will be supporting Kubernetes distributions through the [Flexvolume Driver](https://github.com/hpe-storage/flexvolume-driver) and [Kubernetes Dynamic Provisioner](https://github.com/hpe-storage/k8s-dynamic-provisioner) in upcoming releases.
 
 ## Install and Quick Start instructions
 
@@ -32,8 +32,10 @@ Troubleshooting issues with the plugin can be performed using these [tips](/docs
 
 - For upgrading the plugin from older version to the current released version, user needs to unmount all the volumes and follow the standard
  upgrade procedure described in docker guide.
+ 
+- User can list the backups associated with the volume by inspecting the volume 
 
 ```Inspect the volume to verify if the backups got created
-docker volume inspect <volume_name>. This should display backups details which can be selected as per requirement for the restore in the restoreOf option.
+docker volume inspect <volume_name>. This should display backups associated to the volume which can be selected for the Volume Restore in the restoreOf option.
 
 ```
