@@ -2,7 +2,20 @@
 
 HPE Docker Volume Plugin is an open source project that provides persistent storage and features for your containerized applications using HPE SimpliVity.
 
-Currently, this Volume Plugin for Docker supports popular container platform ie. Docker. We will be supporting Kubernetes distributions through the [Flexvolume Driver](https://github.com/hpe-storage/flexvolume-driver) and [Kubernetes Dynamic Provisioner](https://github.com/hpe-storage/k8s-dynamic-provisioner) in upcoming releases.
+This plugin has 2 components: 
+1.	SimpliVity nodePlugin
+
+It needs to be installed on all worker nodes where you want to provision volumes.
+
+2.	SimpliVity Container Provider
+
+It needs to be run as a container on one of the worker nodes in the swarm cluster.
+
+HPE SimpliVity provides a Docker certified nodePlugin (https://hub.docker.com/plugins/hpe-simplivity-docker-volume-plugin ) and Container Provider 
+(https://hub.docker.com//hpe-simplivity-container-provider) delivered through the Docker Store.
+
+
+Note: We will be supporting Kubernetes distributions through the [Flexvolume Driver](https://github.com/hpe-storage/flexvolume-driver) and [Kubernetes Dynamic Provisioner](https://github.com/hpe-storage/k8s-dynamic-provisioner) in upcoming releases.
 
 ## Install and Quick Start instructions
 
