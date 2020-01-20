@@ -2,11 +2,11 @@
 
 ## HPE SimpliVity Docker volume Plugin can be deployed in following methods:
 
-* [Quick Start Guide for Standalone Docker environments](#docker)
+* [Quick Start Guide for Docker Engine Managed Plugin](#docker)
 
-## Quick Start Guide for Standalone Docker environments <a name="docker"></a>
+## Quick Start Guide for Docker Engine Managed Plugin <a name="docker"></a>
 
-Steps for Deploying the Managed Plugin (HPE SimpliVity Volume Plug-in for Docker) in a Standalone Docker environment
+Steps for Deploying the Managed Plugin (HPE SimpliVity Volume Plug-in for Docker) in a Docker Engine environment.
 
 ### **Prerequisite packages to be installed on host OS:**
 
