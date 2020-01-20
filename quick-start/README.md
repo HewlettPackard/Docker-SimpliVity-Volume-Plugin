@@ -22,7 +22,7 @@ docker --version
 
 ## Installation Guides
 
-**Docker** - [Quick Start Guide for Standalone Docker](/docs/quick_start_guide.md#quick-start-guide-for-standalone-docker-environments-)
+**Docker** - [Quick Start Guide for Docker Engine Managed plugin](/docs/quick_start_guide.md#quick-start-guide-for-standalone-docker-environments-)
 
 ## Usage
 
